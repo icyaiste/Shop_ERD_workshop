@@ -1,0 +1,40 @@
+{
+  "name": "shop_erd_workshop",
+  "version": "1.0.0",
+  "description": "<img width=\"544\" height=\"345\" alt=\"Order ERD drawio\" src=\"https://github.com/user-attachments/assets/6a562437-7154-4890-8bd6-773eb1c7f6b0\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.ts",
+    "seed": "tsx prisma/seed.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icyaiste/Shop_ERD_workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/icyaiste/Shop_ERD_workshop/issues"
+  },
+  "homepage": "https://github.com/icyaiste/Shop_ERD_workshop#readme",
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^6.19.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
