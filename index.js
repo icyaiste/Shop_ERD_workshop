@@ -53,6 +53,19 @@ app.patch('/products/:id', async (req, res) => {
   }
 });
 
+app.delete('/products/:id', async (req, res) => {
+  try {
+    await prisma.product.delete({
+      where: { id: Number(req.params.id) },
+    });
+    res.status(204).send();
+    return res.json({ message: 'Product deleted successfully' });
+  } catch (error) {
+      console.error('Delete /products/:id failed:', error);
+      res.status(500).json({ error: 'Failed to delete product' });
+  }
+});
+
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
